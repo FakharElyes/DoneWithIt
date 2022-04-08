@@ -1,14 +1,22 @@
 import { StatusBar } from 'expo-status-bar';
-import { StyleSheet, Text, View } from 'react-native';
+import { StyleSheet, 
+  Text, 
+  View, 
+  SafeAreaView, 
+  Image, 
+  TouchableWithoutFeedback, 
+  TouchableOpacity,
+  TouchableHighlight,
+  Button
+} from 'react-native';
 
 export default function App() {
-  console.log("app executed");
-  let x = 1;
   return (
-    <View style={styles.container}>
-      <Text>testing</Text>
-      <StatusBar style="auto" />
-    </View>
+    <SafeAreaView style={styles.container}>
+      <Button
+        title = "Click Me"
+      />
+    </SafeAreaView>
   );
 }
 
